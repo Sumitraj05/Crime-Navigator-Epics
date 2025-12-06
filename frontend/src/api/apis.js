@@ -6,10 +6,10 @@ const apis =()=>{
     ? "http://localhost:4044"           // ← NO trailing slash
     : "https://epics-crime-navigator-app.onrender.com";  // ← NO trailing slash
     const list = {
-        registerUser : `${local}user/register`,
-        loginUser : `${local}user/login`,
-        getUserDetails: `${local}user/getUserDetails`,
-        logout: `${local}user/logout`,
+        registerUser : `${local}/user/register`,
+        loginUser : `${local}/user/login`,
+        getUserDetails: `${local}/user/getUserDetails`,
+        logout: `${local}/user/logout`,
        
     }
 
