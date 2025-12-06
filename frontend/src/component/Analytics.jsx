@@ -1,4 +1,4 @@
-import './analytics.css';
+import './Analytics.css';
 export const Analytics = () => {
     return (
       <section className="analytics-section">
