@@ -1,5 +1,10 @@
 const apis =()=>{
-    const local = "http://localhost:4044/"
+    const isLocalhost = window.location.hostname === "localhost" || 
+                      window.location.hostname === "127.0.0.1";
+
+  const local = isLocalhost 
+    ? "http://localhost:4044"           // ← NO trailing slash
+    : "https://epics-crime-navigator-app.onrender.com";  // ← NO trailing slash
     const list = {
         registerUser : `${local}user/register`,
         loginUser : `${local}user/login`,
